@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Workshop</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <style>
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        padding: 0 1rem 1rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
     <nav>
-        <p id="nav-brand">Workshop</p>
-        <ul id="nav-ul">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Featured posts</li>
-        </ul>
+      <p id="nav-brand">Workshop</p>
+      <ul id="nav-ul">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Featured posts</li>
+      </ul>
     </nav>
     <header>
-        <h1 id="hello">Hello World !!!</h1>
+      <h1 id="hello">Hello World !!!</h1>
     </header>
-    
-    <main>
-        <section id="aboutussection">
-            <h2>About us</h2>
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ex iure sequi reprehenderit dolor! Harum, voluptatum alias neque dolorum eveniet, 
-                repellendus necessitatibus voluptatibus accusantium reprehenderit aut quae, quia quam provident?</p>
-        </section>
-    
-        <section id="featuredsection">
-            <h2>Featured Posts</h2>
-            <div>
-                <article>
-                    <h3>Article 1</h3>
-                </article>
-                <article>
-                    <h3>Article 2</h3>
-                </article>
-                <article>
-                    <h3>Article 3</h3>
-                </article>
-                <article>
-                    <h3>Article 4</h3>
-                </article>
-				<article>
-                    <h3>Article 5</h3>
-                </article>
-            </div>
-        </section>
+    <main>
+      <section id="aboutussection">
+        <h2>About us</h2>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ex
+          iure sequi reprehenderit dolor! Harum, voluptatum alias neque dolorum
+          eveniet, repellendus necessitatibus voluptatibus accusantium
+          reprehenderit aut quae, quia quam provident?
+        </p>
+      </section>
+
+      <section id="featuredsection" class="featured-posts">
+        <h2>Featured Posts</h2>
+        <div class="articles-grid">
+          <article>
+            <h3>Article 1</h3>
+          </article>
+          <article>
+            <h3>Article 2</h3>
+          </article>
+          <article>
+            <h3>Article 3</h3>
+          </article>
+          <article>
+            <h3>Article 4</h3>
+          </article>
+          <article>
+            <h3>Article 5</h3>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer>
-        &copy; 2022 wilders
-    </footer>
-</body>
+    <footer>&copy; 2022 wilders</footer>
+  </body>
 </html>

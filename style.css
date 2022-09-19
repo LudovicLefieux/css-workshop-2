@@ -1,0 +1,24 @@
+/*****************
+FEATURED SECTION
+*****************/
+
+.featured-posts .articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.articles-grid > article:first-child {
+  grid-column: span 2;
+}
+
+.featured-posts article {
+  color: #ff6b6b;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.featured-posts h3 {
+  margin: 0;
+}
