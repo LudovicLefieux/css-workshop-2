@@ -2,45 +2,45 @@
 HEADER SECTION
 *****************/
 
-nav{
-    background-color: #f76c6c;
-    padding:10px;
-    color:white;
-    display: flex;
-    align-items: center;   
-    justify-content: space-between;
+nav {
+  background-color: #f76c6c;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#nav-brand{
-    font-weight: bold;
-    font-size: 1.6rem;
+#nav-brand {
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
-#nav-ul{
-    display:flex;
-    flex-direction: column;
-    gap:5%;
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 1.1rem;
+#nav-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-header{
-    min-height:250px;
-    background-image: url("https://loremflickr.com/cache/resized/7341_27322037234_53308c23fa_320_240_nofilter.jpg");
-    background-size: cover;
-    display: flex;
-    align-items: center;   
-    justify-content: center;
-    color:white;
+header {
+  min-height: 250px;
+  background-image: url("https://loremflickr.com/cache/resized/7341_27322037234_53308c23fa_320_240_nofilter.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-footer{
-    background-color: #f76c6c;
-    min-height:73px;
-    display: flex;
-    align-items: center;   
-    margin-top:2%
+footer {
+  background-color: #f76c6c;
+  min-height: 73px;
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
 }
 
 /*****************
@@ -66,4 +66,31 @@ FEATURED SECTION
 
 .featured-posts h3 {
   margin: 0;
+}
+
+/*****************
+DESKTOP
+*****************/
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .featured-posts .articles-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .featured-posts article:first-child {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
 }
